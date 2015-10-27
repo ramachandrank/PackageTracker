@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Package</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Login Validations</description>
+    <display-name>Login_page</display-name>
+    <servlet-name>Login_page</servlet-name>
+    <servlet-class>com.srk.pkg.Login_page</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login_page</servlet-name>
+    <url-pattern>/Login_page</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>registration</display-name>
+    <servlet-name>registration</servlet-name>
+    <servlet-class>com.srk.pkg.registration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registration</servlet-name>
+    <url-pattern>/registration</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreateShipment</display-name>
+    <servlet-name>CreateShipment</servlet-name>
+    <servlet-class>com.srk.pkg.CreateShipment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateShipment</servlet-name>
+    <url-pattern>/CreateShipment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>forgot_password</display-name>
+    <servlet-name>forgot_password</servlet-name>
+    <servlet-class>com.srk.pkg.forgot_password</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>forgot_password</servlet-name>
+    <url-pattern>/forgot_password</url-pattern>
+  </servlet-mapping>
+</web-app>
